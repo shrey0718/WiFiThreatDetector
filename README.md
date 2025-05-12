@@ -37,20 +37,21 @@ python wifi_threat_detector.py
 
 ## 📊 Screenshots
 Here are images showcasing the tool’s interface, scan results, threat alerts, and historical trend analysis:
-Dashboard (images/dashboard.jpg) C:\Users\SHREYA\Downloads\WifiThreatDetector\images
-Threat Alert](images/threat_alert.png)
-Advance Security Scan
-Handshake
-Filter
-Signal Strength Chart
-Historical Trends (images/trend_analysis.png)
-Export CSV
+
+Dashboard (images/dashboard.jpg.png)
+Threat Alert (ThreatAlert,jpg.png)
+Advance Security Scan (AdvanceSecurityScan.jpg.png)
+Handshake (HandShake.jpg.png)
+Filter (filter.jpg.png)
+Signal Strength Chart (SignalStrengthChart.jpg.png)
+Historical Trends (HistoricalScanTrends.jpg.png)
+Export CSV (ExportCSV.jpg.png)
 
 ##🎯 Use Cases
 ✔ Cybersecurity Professionals – Assess network vulnerabilities ✔ Penetration Testers – Identify weak encryption points ✔ IT Teams – Monitor corporate WiFi security ✔ Public WiFi Users – Verify networks before connecting
 
 ##🔗 YouTube Demo
-📽️ Watch a full demo of the tool in action: 🔗 [Insert YouTube link here]
+📽️ Watch a full demo of the tool in action: 🔗 https://youtu.be/OvL9J5SwkdY?si=_xQpY4sGg88afccb
 
 ##📜 License
 This project is open-source and distributed under the MIT License.
