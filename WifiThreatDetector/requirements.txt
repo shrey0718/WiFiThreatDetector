@@ -1,5 +1,0 @@
-pywifi
-matplotlib
-sqlite3
-pandas
-numpy
