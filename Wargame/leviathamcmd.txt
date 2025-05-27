@@ -1,0 +1,57 @@
+# Commands Used - Cybersecurity Internship Assignment
+## Leviathan Lab Commands
+
+### Level 0
+ssh leviathan0@leviathan.labs.overthewire.org -p 2223
+
+### Level 0 → 1
+ls -la
+cd .backup
+grep leviathan1 bookmarks.html
+
+
+### Level 1 → 2
+
+ls -la
+ltrace ./check
+
+### Level 2 → 3
+mkdir /tmp/leviathan2
+cd /tmp/leviathan2
+touch 'file;bash'
+ln -s /etc/leviathan_pass/leviathan3
+
+
+### Level 3 → 4
+
+ls -la
+ltrace ./check
+
+### Level 4 → 5
+
+ls -la
+./bin
+# (Decode binary output manually)
+
+
+### Level 5 → 6
+
+ls -la
+ltrace ./leviathan5
+touch /tmp/file.log
+echo "hello" > /tmp/file.log
+ln -s /etc/leviathan_pass/leviathan6 /tmp/file.log
+./leviathan
+
+### Level 6 → 7
+
+ls -la
+ltrace ./leviathan6
+for i in {0000..9999}; do echo $i; ./leviathan6 $i; done
+
+### Level 7
+ls -la
+cat CONGRATULATIONS
+
+
+

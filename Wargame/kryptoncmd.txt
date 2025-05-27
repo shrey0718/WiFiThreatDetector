@@ -1,0 +1,63 @@
+# Commands Used - Cybersecurity Internship Assignment
+## Krypton Lab Commands
+
+### Level 0 → 1
+
+echo 'S1JZUFRPTklTR1JFQVQ=' | base64 -d
+ssh krypton1@krypton.labs.overthewire.org -p 2231
+
+### Level 1 → 2
+
+cd /krypton/krypton1
+cat krypton2
+cat krypton2 | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+
+### Level 2 → 3
+
+ssh krypton2@krypton.labs.overthewire.org -p 2231
+cat /krypton/krypton2/krypton3
+cat krypton3 | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+
+### Level 3 → 4
+
+ssh krypton3@krypton.labs.overthewire.org -p 2231
+cd /krypton/krypton3
+# (Manual frequency analysis)
+
+### Level 4 → 5
+
+ssh krypton4@krypton.labs.overthewire.org -p 2231
+cd /krypton/krypton4
+cat found1
+cat found2
+cat krypton5
+# (Used dcode.fr for Vigenère cipher decryption)
+
+
+### Level 5 → 6
+
+ssh krypton5@krypton.labs.overthewire.org -p 2231
+cd /krypton/krypton5
+cat found1
+cat found2
+cat found3
+cat krypton6
+# (Used dcode.fr Automatic Decryption)
+
+
+### Level 6 → 7
+ssh krypton6@krypton.labs.overthewire.org -p 2231
+cd /krypton/krypton56
+cat README
+cat krypton6
+python3 -c 'print("A" * 50)' > /tmp/plain
+./encrypt6 /tmp/plain /tmp/cipher
+cat /tmp/cipher
+cat krypton7
+
+### Level 7
+ssh krypton7@krypton.labs.overthewire.org -p 2231
+
+
+
+

